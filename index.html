@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body class="bg-gray-950 text-white">
+    <div
+      class="container flex justify-center items-center h-screen mx-auto relative"
+    >
+      <div
+        class="player-0 bg-gray-500 transition duration-700 text-center p-8 w-100 h-110 max-sm:w-60 max-sm:h-70 max-sm:gap-15 flex flex-col gap-50 rounded-tl-xl rounded-bl-xl text-white font-bold"
+      >
+        <div class="top flex flex-col gap-4">
+          <p class="text-4xl font-mono">Player1</p>
+          <p class="score-0 text-3xl">44</p>
+        </div>
+        <div class="bottom bg-gray-600 w-30 py-2 rounded-xl mx-auto">
+          <p>Current</p>
+          <p class="current-0 text-3xl">0</p>
+        </div>
+      </div>
+      <div
+        class="player-1 bg-gray-800 transition duration-700 text-center p-8 w-100 h-110 max-sm:w-60 max-sm:h-70 max-sm:gap-15 flex flex-col gap-50 rounded-tr-xl rounded-br-xl text-gray-400"
+      >
+        <div class="top flex flex-col gap-4">
+          <p class="text-4xl font-mono">Player2</p>
+          <p class="score-1 text-3xl">20</p>
+        </div>
+        <div class="bottom bg-gray-600 w-30 py-2 rounded-xl mx-auto">
+          <p>Current</p>
+          <p class="current-1 text-3xl">0</p>
+        </div>
+      </div>
+      <img
+        src="dice-1.png"
+        alt=""
+        class="dice hidden absolute w-20 top-75 rounded-xl max-sm:w-10 max-sm:top-80 transition duration-700"
+      />
+      <button
+        class="newgame absolute top-55 max-sm:top-65 max-sm:text-sm text-red-950 bg-gray-300 px-2 py-1 rounded-2xl cursor-pointer hover:bg-gray-200 transition duration-700"
+      >
+        <i class="fa-solid fa-repeat text-gray-900"></i> New Game
+      </button>
+      <button
+        class="roll absolute top-115 max-sm:top-100 max-sm:text-sm text-red-950 bg-gray-300 px-2 py-1 rounded-2xl cursor-pointer hover:bg-gray-200 transition duration-700"
+      >
+        <i class="fa-solid fa-dice text-gray-900"></i> Roll Dice
+      </button>
+      <button
+        class="hold absolute top-125 max-sm:top-110 max-sm:text-sm text-red-950 bg-gray-300 px-2 py-1 rounded-2xl cursor-pointer hover:bg-gray-200 transition duration-700"
+      >
+        <i class="fa-solid fa-down-long text-gray-900"></i> Hold
+      </button>
+
+      <p
+        class="correct absolute top-70 max-sm:top-55 backdrop-blur-3xl text-white w-70 text-center px-3 flex justify-center items-center text-2xl font-mono rounded-tr-xl rounded-bl-xl max-sm:text-sm transition duration-700"
+      ></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
